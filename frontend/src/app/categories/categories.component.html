@@ -1,0 +1,11 @@
+<div class="row g-4">
+  <div *ngFor="let category of categories" class="col-md-4">
+    <div class="card">
+      <img src="/assets/images/loverAlbumcover.jfif" class="card-img-top" alt="Album img">
+      <div class="card-body">
+        <h5 class="card-title">Category :{{ category.name }}</h5>
+        <button class="btn btn-primary" (click)="onCategoryClick(category)">View Details</button>
+      </div>
+    </div>
+  </div>
+</div>
